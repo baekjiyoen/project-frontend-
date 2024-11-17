@@ -1,0 +1,71 @@
+/* 공통 스타일 */
+body {
+    font-family: Objective, sans-serif;
+}
+
+/* 카테고리 */
+header {
+    width: 100%;
+    position: fixed;
+}
+.navbar {
+    opacity: 0.8;
+    transition: opacity 0.3s ease; /* 전환 효과 추가 */
+}
+.navbar.activated {
+    opacity: 1;
+}
+.nav-link {
+    font-weight: bold;
+}
+
+/* 페이지 콘텐츠 스타일 */
+.side-page-main-div {
+    padding-top: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.side-page-main-div img {
+    width: 100%;
+}
+
+
+/*시작 하기*/
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(247, 138, 156);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(247, 138, 156);;
+}
+
+
+a {
+    color: rgb(247, 138, 156);;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

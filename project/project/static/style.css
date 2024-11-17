@@ -1,0 +1,144 @@
+/* 공통 스타일 */
+body {
+    font-family: Arial, sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+/* 카테고리 */
+header {
+    width: 100%;
+    position: fixed;
+}
+.navbar {
+    opacity: 0.8;
+    transition: opacity 0.3s ease; /* 전환 효과 추가 */
+}
+.navbar.activated {
+    opacity: 1;
+}
+.nav-link {
+    font-weight: bold;
+}
+
+/* 페이지 콘텐츠 스타일 */
+.side-page-main-div {
+    padding-top: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.side-page-main-div img {
+    width: 100%;
+}
+
+/* 시작 하기 */
+.container {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(247, 138, 156);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(247, 138, 156);
+}
+
+a {
+    color: rgb(247, 138, 156);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 챗봇 스타일 */
+#chat-container {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#chat-header {
+    background-color: #d8b4ff; /* 연보라색 */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#chat-messages {
+    flex: 1;
+    height: 300px;                /* 고정된 높이 */
+    overflow-y: auto;             /* 세로 방향 스크롤만 활성화 */
+    border: 1px solid #ccc;      /* 테두리 추가 (선택 사항) */
+    padding: 10px;                /* 내부 여백 추가 */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#user-input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-button {
+    border: none;
+    background-color: #f78a9c; /* 연핑크색 */
+    color: white;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #f78a9c; /* 같은 색 유지 */
+}
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #e6e6e6; /* 연회색 */
+    text-align: right;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #f7cdd0; /* 연핑크색 */
+    text-align: left;
+}
